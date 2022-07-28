@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+
+}
+
+body {
+    background-color: #36393F;
+}
+
+nav {
+    height: 100%;
+    /* width: 0; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+}
+
+nav .member {
+    background-color: #2F3136;
+    padding: 10px 10px;
+}
+
+nav .member hr {
+    border-color: #36393F;
+    border-style: solid;
+}
+.member .person {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+nav .sidebar {
+    color: #96989D;
+    background-color: #202225;
+}
+
+nav .sidebar .a {
+    display: block;
+    font-size: 24;
+}
