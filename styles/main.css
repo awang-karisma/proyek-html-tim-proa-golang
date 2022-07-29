@@ -8,8 +8,6 @@ body {
     background-color: #36393F;
 }
 
-
-
 nav {
     height: 100%;
     z-index: 1;
@@ -100,6 +98,7 @@ nav.open {
     margin: 2px 0;
     padding: 5px;
     border-radius: 6px;
+    cursor:pointer;
 }
 
 .sidebar .menu li.active {
@@ -148,4 +147,5 @@ nav.open {
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 26px;
+    border: none;
 }
