@@ -3,6 +3,7 @@
         <link href="styles/main.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/icons8-winking-face-with-tongue-emoji-32.png">
 
+        <script type="text/javascript" src="scripts/menu.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
     </head>    
     <body>
@@ -13,18 +14,12 @@
                         <div class="person" style="background-color: #43B581"></div>
                     </a>
                     <hr>
-                    <a href="https://google.com">
-                        <div class="person" style="background-color: #00A4E7"></div>
-                    </a>
-                    <a href="https://google.com">
-                        <div class="person" style="background-color: #FEE10E"></div>
-                    </a>
-                    <a href="https://google.com">
-                        <div class="person" style="background-color: #ED4245"></div>
-                    </a>
-                    <a href="https://google.com">
-                        <div class="person" style="background-color: #F97A10"></div>
-                    </a>
+                    <div class="person" style="background-color: #00A4E7" onclick="goto('ardi')"></div>
+                    <div class="person" style="background-color: #ab87ce" onclick="goto('awang')"></div>
+                    <div class="person" style="background-color: #FEE10E" onclick="goto('dian')"></div>
+                    <div class="person" style="background-color: #ED4245" onclick="goto('dini')"></div>
+                    <div class="person" style="background-color: #F97A10" onclick="goto('dony')"></div>
+
                 </div>
                 <div class="sidebar">
                     <div class="header">
@@ -33,11 +28,11 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="menu">
+                    <div class="menu" id="menu">
                         <ul>
-                            <li>start</li>
+                            <li onclick="a">start</li>
                             <li class="active">about-me</li>
-                            <li>link-1</li>
+                            <li><a href="#" onclick="loadPage('profile.awang.html', 'maincontent')">link-1</a></li>
                             <li>link-2</li>
                             <li>link-3</li>
                             <li>link-4</li>
@@ -61,31 +56,9 @@
                     </div>
                 </div>
                 <hr>
-                <div class="main">
-                    <div class="middle_column">
-                        <p>Experiences:</p>
-                        <ul>
-                            <li>Lubricant manufacturing</li>
-                            <li>Footwear manufacturing</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="right_column">
-                        <h1 class="section-title">Areas of responsibility:</h1>
-                        <div class="contents-item">
-                            <img src="images/icon_qa.png">
-                        </div>
-                        <div class="contents-item">
-                            <img src="images/icon_hse.png">
-                        </div>
-                        <div class="contents-item">
-                            <img src="images/icon_prod.png">
-                        </div>
-                        <div class="contents-item">
-                            <img src="images/icon_dev.png">
-                        </div>
-                    </div>
-                </div>
+                <!-- <div class="main"> -->
+                    <iframe class="main" id="maincontent" src=""></iframe>
+                <!-- </div> -->
             </div>
         </div>
         <footer>
