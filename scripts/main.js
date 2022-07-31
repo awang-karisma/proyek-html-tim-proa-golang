@@ -16,7 +16,6 @@ window.addEventListener('resize', function (event) {
  * Toggle navbar position
  */
  function toggleNav() {
-    console.log(isNavOpen)
     if(isNavOpen) {
         closeNav()
     } else {
@@ -98,7 +97,6 @@ window.addEventListener("DOMContentLoaded", function () {
     content.addEventListener('click', function(event) {
         if (window.innerWidth < breakpointMobile && document.querySelector('nav').classList.contains('open')) {
             closeNav()
-            console.log('removed')
         } 
     })
 
