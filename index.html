@@ -1,70 +1,70 @@
 <html>
-    <head>
-        <link href="styles/main.css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="images/icons8-winking-face-with-tongue-emoji-32.png">
 
-        <script type="text/javascript" src="scripts/menu.js"></script>
-        <script type="text/javascript" src="scripts/main.js"></script>
-    </head>    
-    <body>
-        <div class="wrapper">
-            <nav class="open">
-                <div class="member">
-                    <a href="#" onclick="toggleNav()">
-                        <div class="person" style="background-color: #43B581"></div>
-                    </a>
-                    <hr>
-                    <div class="person" style="background-color: #00A4E7" onclick="goto('ardi')"></div>
-                    <div class="person" style="background-color: #ab87ce" onclick="goto('awang')"></div>
-                    <div class="person" style="background-color: #FEE10E" onclick="goto('dian')"></div>
-                    <div class="person" style="background-color: #ED4245" onclick="goto('dini')"></div>
-                    <div class="person" style="background-color: #F97A10" onclick="goto('dony')"></div>
+<head>
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/icons8-winking-face-with-tongue-emoji-32.png">
 
-                </div>
-                <div class="sidebar">
-                    <div class="header">
-                        <div class="title">
-                            Nama Peserta
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="menu" id="menu">
-                        <ul>
-                            <li onclick="a">start</li>
-                            <li class="active">about-me</li>
-                            <li><a href="#" onclick="loadPage('profile.awang.html', 'maincontent')">link-1</a></li>
-                            <li>link-2</li>
-                            <li>link-3</li>
-                            <li>link-4</li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="content">
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="open">
+            <div class="member">
+                <a href="#" onclick="toggleNav()">
+                    <div class="person" style="background-color: #43B581"></div>
+                </a>
+                <hr>
+                <div class="person" style="background-color: #00A4E7" onclick="goto('ardi')"></div>
+                <div class="person" style="background-color: #ab87ce" onclick="goto('awang')"></div>
+                <div class="person" style="background-color: #FEE10E" onclick="goto('dian')"></div>
+                <div class="person" style="background-color: #ED4245" onclick="goto('dini')"></div>
+                <div class="person" style="background-color: #F97A10" onclick="goto('dony')"></div>
+
+            </div>
+            <div class="sidebar">
                 <div class="header">
-                    <div class="togglenav">
-                        <a href="#" onclick="toggleNav()">
-                            <svg fill="#96989D" viewBox="0 0 100 80" width="40" height="15">
-                                <rect width="120" height="15"></rect>
-                                <rect y="30" width="120" height="15"></rect>
-                                <rect y="60" width="120" height="15"></rect>
-                            </svg>
-                        </a>
-                    </div>
                     <div class="title">
-                        <span>Judul Halaman
+                        Nama Peserta
                     </div>
                 </div>
                 <hr>
-                <!-- <div class="main"> -->
-                    <iframe class="main" id="maincontent" src=""></iframe>
-                <!-- </div> -->
+                <div class="menu" id="menu">
+                    <ul>
+                        <li onclick="a">start</li>
+                        <li class="active">about-me</li>
+                        <li><a href="#" onclick="loadPage('profile.awang.html', 'maincontent')">link-1</a></li>
+                        <li>link-2</li>
+                        <li>link-3</li>
+                        <li>link-4</li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+        <div class="content">
+            <div class="modalcover"></div>
+            <div class="header">
+                <div class="togglenav">
+                    <a href="#" onclick="toggleNav()">
+                        <svg fill="#96989D" viewBox="0 0 100 80" width="40" height="15">
+                            <rect width="120" height="15"></rect>
+                            <rect y="30" width="120" height="15"></rect>
+                            <rect y="60" width="120" height="15"></rect>
+                        </svg>
+                    </a>
+                </div>
+                <div class="title">
+                    <span>Judul Halaman
+                </div>
+            </div>
+            <hr>
+            <iframe class="main" id="maincontent" src=""></iframe>
         </div>
-        <footer>
-            
-        </footer>
-    </body>
-    
-    
-    
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

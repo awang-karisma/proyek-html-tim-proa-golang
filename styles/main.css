@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -38,6 +38,7 @@ nav {
 nav.open {
     margin-left: 0px;
 }
+
 /* member list styling */
 .member {
     background-color: #202225;
@@ -98,12 +99,12 @@ nav.open {
     margin: 2px 0;
     padding: 5px;
     border-radius: 6px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .sidebar .menu li.active {
-    background-color:#36393F;
-    color:#ddd
+    background-color: #36393F;
+    color: #ddd
 }
 
 .sidebar .menu li:before {
@@ -112,7 +113,7 @@ nav.open {
 }
 
 .sidebar .menu li:hover {
-    background-color:#44484f;
+    background-color: #44484f;
     color: #fff;
 }
 
@@ -123,16 +124,26 @@ nav.open {
     flex-direction: column;
 }
 
+.content .modalcover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
 .content .header {
     background-color: #36393F;
     display: flex;
     flex-direction: row;
 }
 
-
 .content .header .title {
     padding-left: 10px;
 }
+
 .content .header .togglenav {
     padding: 26px 10px;
 }
